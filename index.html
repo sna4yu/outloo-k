@@ -22,8 +22,7 @@
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
       }
 
-      h1,
-      h2 {
+      h1, h2 {
         color: #333;
       }
 
@@ -101,166 +100,134 @@
         text-align: center;
         margin-bottom: 10px;
       }
+
+      .help-section {
+        background: #d1ecf1;
+        border-left: 5px solid #0c5460;
+        padding: 15px;
+        margin: 30px 0;
+        border-radius: 5px;
+      }
+
+      .help-section h2 {
+        color: #0c5460;
+      }
+
+      .help-section a {
+        color: #0056b3;
+        text-decoration: underline;
+      }
     </style>
   </head>
 
   <body>
     <div class="container">
       <div class="nav-buttons">
-      <a href="https://sna4yu.github.io/outloo-k/" class="nav-button"
-          >Outlook Tutorial</a
-        >
-        <a href="https://sna4yu.github.io/moz/" class="nav-button"
-          >Mozilla Thunderbird Tutorial</a
-        >
-        <a href="https://sna4yu.github.io/gmailM/" class="nav-button"
-          >Gmail Send As Tutorial</a
-        >
+        <a href="https://sna4yu.github.io/outloo-k/" class="nav-button">Outlook Tutorial</a>
+        <a href="https://sna4yu.github.io/moz/" class="nav-button">Mozilla Thunderbird Tutorial</a>
+        <a href="https://sna4yu.github.io/gmailM/" class="nav-button">Gmail Send As Tutorial</a>
       </div>
+
       <h1>Microsoft Outlook Tutorial</h1>
 
       <div class="toc">
         <h3>Table of Contents</h3>
         <ul>
           <li><a href="#configure">Configure Outlook Manually</a></li>
-          <li>
-            <a href="#edit">Edit Existing Email Account Settings in Outlook</a>
-          </li>
+          <li><a href="#edit">Edit Existing Email Account Settings in Outlook</a></li>
+          <li><a href="#help">Help & Download for Beginners</a></li>
         </ul>
       </div>
 
       <div id="configure" class="section">
         <h2>Configure Outlook Manually</h2>
-        <p>
-          To configure your email accounts manually with Microsoft Outlook,
-          follow these steps:
-        </p>
+        <p>To configure your email accounts manually with Microsoft Outlook, follow these steps:</p>
         <div class="step">
-          <strong>Step 1:</strong> Open Microsoft Outlook on your computer.
-          Click <em>File</em> > <em>Account Settings</em> >
-          <em>Manage Profiles</em>.
+          <strong>Step 1:</strong> Open Microsoft Outlook on your computer. Click <em>File</em> > <em>Account Settings</em> > <em>Manage Profiles</em>.
           <img src="account.png" alt="" />
         </div>
         <div class="step">
-          <strong>Step 2:</strong> In the <em>Mail Setup - Outlook</em> window,
-          click <em>Show Profiles</em>, select your profile, and click
-          <em>Properties</em>. Then click <em>Email Accounts</em>.
+          <strong>Step 2:</strong> In the <em>Mail Setup - Outlook</em> window, click <em>Show Profiles</em>, select your profile, and click <em>Properties</em>. Then click <em>Email Accounts</em>.
         </div>
         <img src="profilr.png" alt="" />
         <div class="step">
-          <strong>Step 3:</strong> In the <em>Account Settings</em> window,
-          click <em>New</em> to add a new email account.
+          <strong>Step 3:</strong> In the <em>Account Settings</em> window, click <em>New</em> to add a new email account.
         </div>
         <div class="step">
-          <strong>Step 4:</strong> Select
-          <em>Manual setup or additional server types</em> and click
-          <em>Next</em>.
+          <strong>Step 4:</strong> Select <em>Manual setup or additional server types</em> and click <em>Next</em>.
         </div>
         <div class="step">
-          <strong>Step 5:</strong> Choose <em>POP or IMAP</em> and click
-          <em>Next</em>.
+          <strong>Step 5:</strong> Choose <em>POP or IMAP</em> and click <em>Next</em>.
         </div>
         <div class="step">
           <strong>Step 6:</strong> Fill in the following details:
           <ul>
-            <li>
-              <em>Your Name:</em> Enter the name you want to appear in outgoing
-              emails.
-            </li>
-            <li>
-              <em>Email Address:</em> Enter your full email address (e.g.,
-              username@yourdomain.com).
-            </li>
-            <li>
-              <em>Account Type:</em> Select IMAP (recommended, unless you
-              specifically need POP3).
-            </li>
-            <li>
-              <em>Incoming mail server:</em> Find the exact hostname in Site
-              Tools > Email > Accounts, select the email account, go to the
-              kebab menu > Mail Configuration, and check the Manual Settings
-              tab.
-            </li>
-            <li>
-              <em>Outgoing mail server (SMTP):</em> Use the same hostname as the
-              incoming server.
-            </li>
-            <li>
-              <em>User Name:</em> Enter your full email address (e.g.,
-              username@yourdomain.com).
-            </li>
-            <li>
-              <em>Password:</em> Enter the password for your email account.
-            </li>
+            <li><em>Your Name:</em> The name that will appear in your emails.</li>
+            <li><em>Email Address:</em> (e.g., username@yourdomain.com)</li>
+            <li><em>Account Type:</em> IMAP (Recommended)</li>
+            <li><em>Incoming mail server:</em> Check Site Tools > Email > Mail Configuration</li>
+            <li><em>Outgoing mail server (SMTP):</em> Same as above</li>
+            <li><em>User Name:</em> Full email address</li>
+            <li><em>Password:</em> Your email password</li>
           </ul>
         </div>
         <div class="step">
-          <strong>Step 7:</strong> Click <em>More Settings</em>, then go to the
-          <em>Outgoing Server</em> tab and check
-          <em>My outgoing server (SMTP) requires authentication</em>. Select
-          <em>Use same settings as my incoming mail server</em>.
+          <strong>Step 7:</strong> Click <em>More Settings</em> > <em>Outgoing Server</em> > Check "My outgoing server requires authentication".
         </div>
         <div class="step">
-          <strong>Step 8:</strong> In the <em>Advanced</em> tab, set the
-          following:
+          <strong>Step 8:</strong> Under the <em>Advanced</em> tab:
           <ul>
-            <li>
-              <strong>Incoming server (IMAP):</strong> Port 993, Encryption
-              method: SSL/TLS.
-            </li>
-            <li>
-              <strong>Outgoing server (SMTP):</strong> Port 465, Encryption
-              method: SSL/TLS.
-            </li>
+            <li><strong>Incoming server (IMAP):</strong> 993, SSL/TLS</li>
+            <li><strong>Outgoing server (SMTP):</strong> 465, SSL/TLS</li>
           </ul>
         </div>
         <div class="step">
-          <strong>Step 9:</strong> Click <em>OK</em>, then <em>Next</em>.
-          Outlook will test the account settings. If successful, click
-          <em>Finish</em> to complete the setup.
+          <strong>Step 9:</strong> Click <em>OK</em> > <em>Next</em> and test the account. Click <em>Finish</em> once done.
         </div>
         <div class="note">
-          <strong>Note:</strong> To verify settings, go to Site Tools > Email >
-          Accounts, select the email account, and check Mail Configuration >
-          Manual Settings tab.
+          <strong>Note:</strong> Double-check settings in Site Tools > Email > Mail Configuration tab.
         </div>
-        <button
-          onclick="alert('Your email account has been added to Outlook!')">
+        <button onclick="alert('Your email account has been added to Outlook!')">
           Simulate Adding Account
         </button>
       </div>
 
       <div id="edit" class="section">
         <h2>Edit Existing Email Account Settings in Outlook</h2>
-        <p>
-          Grok 3 is unable to find instructions to edit an existing email
-          account in Microsoft Outlook. Instead, try the following:
-        </p>
+        <p>If you can't find a way to edit your current settings, try this workaround:</p>
         <div class="step">
-          <strong>Alternative:</strong> Delete the existing email account and
-          re-add it with the updated settings.
+          <strong>Alternative:</strong> Remove the account and re-add it:
           <ul>
-            <li>
-              Go to <em>File</em> > <em>Account Settings</em> >
-              <em>Account Settings</em>.
-            </li>
-            <li>
-              Select the account you want to edit and click <em>Remove</em>.
-            </li>
-            <li>
-              Follow the steps in the "Configure Outlook Manually" section above
-              to re-add the account with the correct settings.
-            </li>
+            <li>File > Account Settings > Account Settings</li>
+            <li>Select the account and click <em>Remove</em></li>
+            <li>Follow the setup steps again to re-add the account</li>
           </ul>
         </div>
         <div class="note">
-          <strong>Note:</strong> Ensure you have the correct settings from Site
-          Tools > Email > Accounts > Mail Configuration > Manual Settings tab
-          before making changes.
+          <strong>Note:</strong> Always save your email settings before making changes.
         </div>
         <button onclick="alert('Email account settings updated successfully!')">
           Simulate Updating Settings
         </button>
+      </div>
+
+      <div id="help" class="help-section">
+        <h2>Help & Download for Beginners</h2>
+        <p>
+          If you're not an IT expert and need help setting up your email, don't worry!
+          You can download a simple PDF setup guide or contact us for step-by-step help.
+        </p>
+        <ul>
+          <li>
+            👉 <a href="https://example.com/outlook-setup-guide.pdf" download>Download Outlook Setup Guide (PDF)</a>
+          </li>
+          <li>
+            💬 Need help? Send an email to <strong><a href="mailto:Veasna@gmail.com">Veasna@gmail.com</a></strong> and we'll guide you.
+          </li>
+        </ul>
+        <p>
+          This guide will walk you through everything with screenshots. No tech skills needed!
+        </p>
       </div>
     </div>
 
